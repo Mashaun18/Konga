@@ -1,0 +1,11 @@
+h1{
+    background-color: brown;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1:hover{
+    color: cornflowerblue;
+
+}
