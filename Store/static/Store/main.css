@@ -1,6 +1,6 @@
 h1{
     background-color: brown;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     cursor: pointer;
     text-align: center;
 }

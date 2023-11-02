@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="{% static 'Store/main.css' %}">
 </head>
 <body>
+    <div style="background-color: blanchedalmond; height: fit-content; width: fit-content; justify-content: center; margin: 20px; display: flex; justify-content: space-around;">
+
+    </div>
     <h1>Welcome to the home page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus, similique magni ullam minima iusto doloribus, mollitia molestiae eaque, voluptatem alias! Nam numquam labore voluptatem eius laboriosam aperiam! Aspernatur, incidunt!</p>
+    <div>
+        {% for product in all_products %}
+        <h2>{{ product.name }} <a href="{% url 'detail' product.id %}">{{ product.name }}</a></h2> <h3>{{ product.price }}</h3>
+        <img style="border-radius:100px;" src="{{ product.image.url }}" alt="{{ product.name }}" width="100vw" height="100vh">
+        <br>
+        {% endfor %}
+    </div>
 </body>
 </html>
